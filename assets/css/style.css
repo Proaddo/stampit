@@ -148,7 +148,7 @@ a:hover, a:focus, a:active {
   transform: translateY(-50%);
 }
 .carousel-home .carousel-title {
-  color: #9dae11;
+  color: #fff;
   font-family: "Dosis", sans-serif;
   font-size: 50px;
   font-weight: bold;

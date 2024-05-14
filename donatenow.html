@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #555;
-            margin-bottom: 10px;
-        }
-        .donate-image {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-            width: 400px;
-        }
-        #qrcode {
-            margin-top: 20px;
-        }
+          .donate-page {
+                  max-width: 600px;
+                  margin: 50px auto;
+                  background-color: #fff;
+                  padding: 30px;
+                  text-align: center;
+                  border-radius: 10px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+
+          .donate-image {
+          display: block;
+          margin: 0 auto; /* Center align the image horizontally */
+          max-width: 100%; /* Limit the image width to the container width */
+          height: auto; /* Maintain aspect ratio */
+          width: 600px; /* Define the desired width */
+      }
+
+
+
+            .donate-page  h1 {
+                  color: #333;
+                  margin-bottom: 20px;
+              }
+            .donate-page  p {
+                  color: #555;
+                  margin-bottom: 10px;
+              }
+            .donate-page  .donate-image {
+                  margin-bottom: 30px;
+              }
+            .donate-page  #qrcode {
+                  margin-top: 20px;
+                    }
     </style>
-</head>
-<body>
-    <div class="container">
-        <img src="assets/images/donate.jpg" alt="Donate" class="donate-image">
-        <h1>Donate Now</h1>
-        <p>Scan the QR code below to make a donation:</p>
-        <div id="qrcode"></div>
-        <p>Or, use the following payment details:</p>
-        <p>Account Name: STAMPIT CHARITABLE TRUST</p>
-        <p>Account Number: 9921201006877</p>
-        <p>Branch Name and Address: Canara Bank , Vijayanagar , Bengaluru  </p>
-        <p>IFSC Code: CNRB0001146</p>
-        <p>UPI ID: statitlikethat@okaxis</p>
+  </head>
+  <body>
+    <div class="donate-page">
+      <img src="assets/images/donate.jpg" alt="Donate" class="donate-image" />
+      <h1>Donate Now</h1>
+      <p>Scan the QR code below to make a donation:</p>
+      <div id="qrcode"></div>
+      <p>Or, use the following payment details:</p>
+      <p>Account Name: STAMPIT CHARITABLE TRUST</p>
+      <p>Account Number: 9921201006877</p>
+      <p>Branch Name and Address: Canara Bank , Vijayanagar , Bengaluru</p>
+      <p>IFSC Code: CNRB0001146</p>
+      <p>UPI ID: statitlikethat@okaxis</p>
     </div>
 
     <!-- QR code generator script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
     <script>
-        // Generate QR code for payment
-        var qr = new QRious({
-            element: document.getElementById('qrcode'),
-            size: 200,
-            value: 'Your payment details here' // Replace with your payment details or payment link
-        });
+      // Generate QR code for payment
+      var qr = new QRious({
+        element: document.getElementById("qrcode"),
+        size: 200,
+        value: "Your payment details here", // Replace with your payment details or payment link
+      });
     </script>
-</body>
+  </body>
 </html>

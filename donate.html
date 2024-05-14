@@ -31,39 +31,40 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <style>
-  body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #555;
-            margin-bottom: 10px;
-        }
-        .donate-image {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-            width: 400px;
-        }
-        #qrcode {
-            margin-top: 20px;
-        }
+   .donate-page {
+                  max-width: 600px;
+                  margin: 50px auto;
+                  background-color: #fff;
+                  padding: 30px;
+                  text-align: center;
+                  border-radius: 10px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+
+          .donate-image {
+          display: block;
+          margin: 0 auto; /* Center align the image horizontally */
+          max-width: 100%; /* Limit the image width to the container width */
+          height: auto; /* Maintain aspect ratio */
+          width: 600px; /* Define the desired width */
+      }
+
+
+
+            .donate-page  h1 {
+                  color: #333;
+                  margin-bottom: 20px;
+              }
+            .donate-page  p {
+                  color: #555;
+                  margin-bottom: 10px;
+              }
+            .donate-page  .donate-image {
+                  margin-bottom: 30px;
+              }
+            .donate-page  #qrcode {
+                  margin-top: 20px;
+                    }
      
     </style>
 
@@ -196,7 +197,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="donate-page">
       <img
         src="assets/images/donate.jpg"
         alt="Donate"

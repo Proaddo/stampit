@@ -30,6 +30,43 @@
     <!-- Template main Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <style>
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .donate-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            width: 400px;
+        }
+        #qrcode {
+            margin-top: 20px;
+        }
+     
+    </style>
+
     <!-- Modernizr -->
     <script src="assets/js/modernizr-2.6.2.min.js"></script>
   </head>
@@ -124,7 +161,11 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li class="has-child">
-                  <a class="is-active" href="https://www.instagram.com/stampitsmiles/">SMILES</a>
+                  <a
+                    class="is-active"
+                    href="https://www.instagram.com/stampitsmiles/"
+                    >SMILES</a
+                  >
 
                   <!--  <ul class="submenu">
                          <li class="submenu-item"><a href="causes.html">Causes list </a></li>
@@ -150,12 +191,29 @@
       <div class="container zoomIn animated">
         <h1 class="page-title">DONATE NOW <span class="title-under"></span></h1>
         <p class="page-description">
-			Empower Change: Donate Now and Make a Difference Today!
+          Empower Change: Donate Now and Make a Difference Today!
         </p>
       </div>
     </div>
 
-   
+    <div class="container">
+      <img
+        src="assets/images/donate.jpg"
+        alt="Donate"
+        class="donate-image"
+        
+      />
+      <h1>Donate Now</h1>
+      <p>Scan the QR code above to make a donation:</p>
+      <div id="qrcode"></div>
+      <p>Or, use the following payment details:</p>
+      <p>Account Name: STAMPIT CHARITABLE TRUST</p>
+      <p>Account Number: 9921201006877</p>
+      <p>Branch Name and Address: Canara Bank , Vijayanagar , Bengaluru  </p>
+      <p>IFSC Code: CNRB0001146</p>
+      <p>UPI ID: statitlikethat@okaxis</p>
+    </div>
+
     <!-- /.main-container  -->
 
     <footer class="main-footer">
@@ -296,6 +354,16 @@
         document.write(
           '<script src="assets/js/jquery-1.11.1.min.js"><\/script>'
         );
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script>
+      // Generate QR code for payment
+      var qr = new QRious({
+        element: document.getElementById("qrcode"),
+        size: 200,
+        value: "Your payment details here", // Replace with your payment details or payment link
+      });
     </script>
 
     <!-- Bootsrap javascript file -->
